@@ -1,0 +1,16 @@
+﻿<Window x:Class="OptionPricer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OptionPricer"
+        mc:Ignorable="d"
+        Title="Option Pricer" Height="350" Width="525">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="54" Margin="30,10,0,0" TextWrapping="Wrap" Text="Price an option here" VerticalAlignment="Top" Width="124"/>
+        <RadioButton x:Name="Call_radio" Content="Call" HorizontalAlignment="Left" Height="20" Margin="30,64,0,0" VerticalAlignment="Top" Width="98" IsChecked="True"/>
+        <RadioButton x:Name="Put_radio" Content="Put" HorizontalAlignment="Left" Height="20" Margin="30,89,0,0" VerticalAlignment="Top" Width="98"/>
+        <Button x:Name="Price_button" Content="Price" HorizontalAlignment="Left" Height="22" Margin="49,192,0,0" VerticalAlignment="Top" Width="57" Click="Price_button_Click"/>
+
+    </Grid>
+</Window>
